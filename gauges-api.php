@@ -1,8 +1,8 @@
 <?php
-$main_account_token = "6e9d01cc0060a65fc39c3de7c3ae91b3";
-$main_gauge_id = "4f16f18cf5a1f53363000007";
-$member_account_token = "81770a364b145221ccb2f492800d8017";
-$member_gauge_id = "4f1f293ff5a1f569fc00000a";
+$main_account_token = "MAIN-TOKEN";
+$main_gauge_id = "MAIN-ID";
+$member_account_token = "SUB-ACCOUNT-TOKEN";
+$member_gauge_id = "SUB-ACCOUNT-ID";
 
 // Get information from Gauges
 $my_info = $this->get_gauges_info($main_account_token);		
@@ -13,14 +13,14 @@ if (is_numeric($my_info)) {
 }
 
 // Get information from Gauges
-/*$new_info = array("first_name" => "Emilio");
+/*$new_info = array("first_name" => "John");
 $my_new_info = $this->set_gauges_info($main_account_token, $new_info);		
 echo "my_new_info<pre>"; var_dump($my_new_info); echo "</pre>";
 if (is_numeric($my_new_info)) {
 	$error = $this->gauges_api_errors($my_new_info);
 	echo "ERROR: ".$error."<br />";
 }
-$new_info = array("last_name" => "Silvas");
+$new_info = array("last_name" => "Doe");
 $my_new_info = $this->set_gauges_info($main_account_token, $new_info);		
 echo "my_new_info<pre>"; var_dump($my_new_info); echo "</pre>";
 if (is_numeric($my_new_info)) {
@@ -29,7 +29,7 @@ if (is_numeric($my_new_info)) {
 }*/
 
 // Create a new client API
-/*$new_client = "this-ministry";
+/*$new_client = "my-website";
 $new_api_client = $this->create_gauges_api_client($main_account_token, $new_client);
 echo "new_api_client<pre>"; var_dump($new_api_client); echo "</pre>";
 if (is_numeric($new_api_client)) {
@@ -38,7 +38,7 @@ if (is_numeric($new_api_client)) {
 }*/
 
 // Delete an existing client API
-/*$temp_key = "de53162d9daec0170e28b3659d12d98b";
+/*$temp_key = "TEST-KEY";
 $delete_client = $this->delete_gauges_api_client($main_account_token, $temp_key);
 echo "delete_client<pre>"; var_dump($delete_client); echo "</pre>";
 if (is_numeric($delete_client)) {
@@ -55,7 +55,7 @@ if (is_numeric($my_api_clients_info)) {
 }
 
 // Create new gauge
-/*$title = "laterboy";
+/*$title = "your-website";
 $time_zone = "Central Time (US %26 Canada)";
 $new_gauge = $this->create_gauge($main_account_token, $title, $time_zone);
 echo "new_gauge<pre>"; var_dump($new_gauge); echo "</pre>";*/
